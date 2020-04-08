@@ -99,7 +99,7 @@ transition: all 0.3s ease;
       align-items: center;
       width: 60%;
       background-color: honeydew;
-      transform: translateX(100%);
+      transform: translateX(-500%);
       transition:transform 0.5s ease-in ;
       overflow-x: hidden;
       z-index: 11;
@@ -107,11 +107,11 @@ transition: all 0.3s ease;
 
     }
     .nav-links li
-    {
+    {  overflow-x: hidden;
         opacity: 0;
     }
     .burger
-    {
+    {  overflow-x: hidden;
         display: block;
     }
 }   
@@ -124,7 +124,7 @@ transition: all 0.3s ease;
 @keyframes navLinksFade{
     from{
         opacity: 0;
-        transform: translateX(50px);
+        transform: translateX(-50px);
     }
     to{
         opacity: 1;
